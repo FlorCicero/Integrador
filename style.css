@@ -1,0 +1,26 @@
+footer ul {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.9682247899159664) 0%,
+    rgb(3, 64, 95) 36%,
+    rgb(2, 74, 102) 100%
+  );
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer ul li {
+  list-style-type: none;
+  width: 10%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
