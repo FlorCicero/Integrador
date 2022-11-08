@@ -10,11 +10,28 @@ footer ul {
     rgb(2, 74, 102) 100%
   );
 }
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+.headermaninframestyle {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(62, 62, 62, 0.5) 0%,
+      rgba(62, 62, 62, 0.5) 100%
+    ),
+    url("./SRC/ba1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
 footer ul li {
   list-style-type: none;
   width: 10%;
