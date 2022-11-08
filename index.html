@@ -26,16 +26,16 @@
                         <a class="nav-link active text-light" aria-current="page" href="#">La conferencia</a >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link disabled ">Los oradores</a>
+                        <a class="nav-link ">Los oradores</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link disabled">El lugar y la fecha</a>
+                        <a class="nav-link ">El lugar y la fecha</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link disabled">Conviértete en orador</a>
+                        <a class="nav-link ">Conviértete en orador</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link disabled text-success">Comprar tickets</a>
+                        <a class="nav-link text-success" href="./compra.html">Comprar tickets</a>
                      </li>
                   </ul>
                </div>
@@ -51,9 +51,9 @@
                   <div class="container-fluid col-md-5 offset-md-7 top-50 end-0  ">
                      <h5 class="card-title" >Conf Bs As</h5>
                      <p class="card-text" >Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a estudiantes de codo a codo y a oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                     <div class="" >
+                     <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
                         <button type="button" class="btn btn-outline-light" >Quiero ser orador</button>
-                        <button type="button" class="btn btn-success">Comprar tickets</button> 
+                        <button type="button" class="btn btn-success" id="goToComprar">Comprar tickets</button> 
                      </div>
                   </div>
                </div>
@@ -64,28 +64,30 @@
          </div>
          <section class="cards">
          <div class="article">
-         <div class="text-center">
+         <div class="text-center mt-2">
          <p class="h6">Conoce a los oradores</p>
          <p class="h3" class="fw-bold">ORADORES</p>
          <div class="card-group" >
             <div class="row row-cols-1 row-cols-md-3 g-4 ">
                <div class="col">
-                  <img src="./SRC/steve.jpg" class="card-img-top" alt="steve" >
-                  <div class="card text-start" >
-                     <div class="card-body">
-                        <button type="button" class="btn btn-warning fw-bold " >JavaScript</button>
-                        <button type="button" class="btn btn-info text-light fw-bold">React</button>
-                        <h5 class="card-title"  class="fw-bold">Steve Jobs</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Nobis natus consectetur commodi ab omnis.
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Nobis natus consectetur commodi ab omnis
-                        </p>
+                  <div class="card">
+                     <img src="./SRC/steve.jpg" class="card-img-top" alt="steve" >
+                     <div class="card text-start" >
+                        <div class="card-body">
+                           <button type="button" class="btn btn-warning fw-bold " >JavaScript</button>
+                           <button type="button" class="btn btn-info text-light fw-bold">React</button>
+                           <h5 class="card-title"  class="fw-bold">Steve Jobs</h5>
+                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nobis natus consectetur commodi ab omnis.
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nobis natus consectetur commodi ab omnis
+                           </p>
+                        </div>
                      </div>
-                  </div>
+                  </div>   
                </div>
                <div class="col">
-                  <div >
+                  <div class="card">
                      <img src="./SRC/bill.jpg" class="card-img-top" alt="Bill" >
                      <div class="card text-start" >
                         <div class="card-body">
@@ -102,17 +104,19 @@
                   </div>
                </div>
                <div class="col">
-                  <img src="./SRC/ada.jpeg" class="card-img-top" alt="Ada">
-                  <div class="card text-start" >
-                     <div class="card-body">
-                        <button type="button" class="btn btn-secondary fw-bold">Negocios</button>
-                        <button type="button" class="btn btn-danger fw-bold">Startups</button>
-                        <h5 class="card-title"  class="fw-bold">Ada Loverace</h5>
-                        <p class="card-text">TLorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Nobis natus consectetur commodi ab omnis.
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Nobis natus consectetur commodi ab omnis. 
-                        </p>
+                  <div class="card">
+                     <img src="./SRC/ada.jpeg" class="card-img-top" alt="Ada">
+                     <div class="card text-start" >
+                        <div class="card-body">
+                           <button type="button" class="btn btn-secondary fw-bold">Negocios</button>
+                           <button type="button" class="btn btn-danger fw-bold">Startups</button>
+                           <h5 class="card-title"  class="fw-bold">Ada Loverace</h5>
+                           <p class="card-text">TLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nobis natus consectetur commodi ab omnis.
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nobis natus consectetur commodi ab omnis. 
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -191,5 +195,6 @@
          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
          crossorigin="anonymous"
          ></script>
+      <script src="./main_home.js"></script>
    </body>
 </html>
