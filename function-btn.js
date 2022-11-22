@@ -84,7 +84,7 @@ function send(e) {
 
 function success() {
     Swal.fire({
-        position: 'top-end',
+        position: 'top-center',
         icon: 'success',
         title: 'Formulario enviado con éxito',
         showConfirmButton: false,
@@ -95,7 +95,7 @@ function success() {
 function failed() {
 
     Swal.fire({
-        position: 'top-end',
+        position: 'top-center',
         icon: 'error',
         title: "Error en Formulario",
         text: "Revise los datos ingresados",
