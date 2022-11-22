@@ -47,7 +47,7 @@
                 <a
                   class="nav-link active text-light"
                   aria-current="page"
-                  href="#"
+                  href="./index.html"
                   >La conferencia</a
                 >
               </li>
@@ -72,7 +72,7 @@
       <div class="container">
         <div class="row mt-4">
           <div class="col">
-            <div class="card text-center border-info" id="student-card">
+            <div class="card text-center border-muted" id="student-card">
               <div class="card-body">
                 <h5 class="card-title">Estudiante</h5>
                 <p class="card-text">
@@ -122,28 +122,44 @@
           <div class="row">
             <div class="col mb-3">
               <input type="text" class="form-control" id="nameinput" placeholder="Nombre">
+                <span id="nameinputHelpInline" class="form-text d-none">
+                  Name Error.
+                </span>
             </div>
             <div class="col mb-3">
               <input type="text" class="form-control" id="surnameinput" placeholder="Apellido">
+              <span id="surnameinputHelpInline" class="form-text d-none">
+                  surName Error.
+              </span>
             </div>
           </div>
           <div class="row">
             <div class="col mb-3">
               <input type="mail" class="form-control" id="mailinput" placeholder="Correo">
+              <span id="mailinputHelpInline" class="form-text d-none">
+                  mailinput Error.
+              </span>
             </div>
           </div>
           <div class="row">
             <div class="col mb-3">
               <label for="cantidadinput" class="form-label">Cantidad</label>
-              <input type="text" class="form-control" id="cantidadinput" placeholder="cantidad">
+              <input type="number" min="1" max="10" class="form-control" id="cantidadinput" placeholder="cantidad">
+              <span id="cantidadinputHelpInline" class="form-text d-none">
+                  cantidadinput Error.
+              </span>
             </div>
             <div class="col mb-3">
               <label for="categoriainput" class="form-label">Categoria</label>
               <select class="form-select" id="categoriainput" placeholder="Categoria">
+                <option value="0">Ninguna</option>
                 <option value="80">Estudiante</option>
                 <option value="50">Trainee</option>
                 <option value="15">Junior</option>
               </select>
+              <span id="categoriainputHelpInline" class="form-text d-none">
+                  categoriainput Error.
+              </span>
             </div>
           </div>
         </form>
@@ -191,6 +207,10 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <script src="./main.js"></script>
+    <script src="./dom.js"></script>
+    <script src="./option.js"></script>
+    <script src="./function-cards.js"></script>
+    <script src="./function-btn.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
