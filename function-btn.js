@@ -115,4 +115,12 @@ btnDelete.onclick = (e) => { cleanForm(e) }
 
 btnResume.onclick = (e) => { send(e) }
 
-f_quantity.onchange = (e) => { ticketPrice(e) }
+f_quantity.onchange = (e) => { 
+    if(f_quantity.value == 0){
+        f_quantity.value = 1
+    }
+    if(f_quantity.value < 0){
+        f_quantity.value = Math.abs(f_quantity.value);
+    }
+    ticketPrice(e)
+}
