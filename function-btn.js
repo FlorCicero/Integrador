@@ -11,9 +11,9 @@ function cleanForm(e) {
     cardStatusRfresh("none")
 
 }
-//VER como aplicar para que no se pueda enviar si no esta completo
+
 function checkError() {
-    let informacion = { "ok": true, "errorFields":[] }
+    let information = { "ok": true, "errorFields":[] }
 
     for (const item of all_form) {
         const itemHelper = getHelpInLineById(item.id);
@@ -21,8 +21,8 @@ function checkError() {
 
         if (item.value == "") {
             item.classList.add("border-danger")
-            informacion.ok = false;
-            informacion.errorFields.push({ "id": item.id, "error": "empty" });
+            information.ok = false;
+            information.errorFields.push({ "id": item.id, "error": "empty" });
             itemHelper.classList.remove("d-none")
             itemHelper.innerText = "El Campo no Puede Estar Vacío."
         } else {
@@ -30,8 +30,8 @@ function checkError() {
             if (item.type == "text") {
                 if (item.value.length < 2) {
                     item.classList.add("border-danger")
-                    informacion.ok = false;
-                    informacion.errorFields.push({ "id": item.id, "error": "too short" });
+                    information.ok = false;
+                    information.errorFields.push({ "id": item.id, "error": "too short" });
                     itemHelper.classList.remove("d-none")
                     itemHelper.innerText = "Se requiere más de un caracter"
                 }
@@ -39,8 +39,8 @@ function checkError() {
             if (item.type == "number") {
                 if (item.value < 1 || item.value > 10) {
                     item.classList.add("border-danger")
-                    informacion.ok = false;
-                    informacion.errorFields.push({ "id": item.id, "error": "out of range" });
+                    information.ok = false;
+                    information.errorFields.push({ "id": item.id, "error": "out of range" });
                     itemHelper.classList.remove("d-none")
                     itemHelper.innerText = "La cantidad está fuera de rango"
                 }
@@ -53,8 +53,8 @@ function checkError() {
                 
                 if (bad_mail_condition) {
                     item.classList.add("border-danger")
-                    informacion.ok = false;
-                    informacion.errorFields.push({ "id": item.id, "error": "Wrong Address" });
+                    information.ok = false;
+                    information.errorFields.push({ "id": item.id, "error": "Wrong Address" });
                     itemHelper.classList.remove("d-none")
                     itemHelper.innerText = "La dierección de e-Mail es incorrecta"
                 }
@@ -63,7 +63,7 @@ function checkError() {
 
     }
 
-    return informacion
+    return information
 }
 
 
@@ -116,6 +116,3 @@ btnDelete.onclick = (e) => { cleanForm(e) }
 btnResume.onclick = (e) => { send(e) }
 
 f_quantity.onchange = (e) => { ticketPrice(e) }
-
-//f_categoryDiscount.onchange = (e) => { ticketPrice(e) }
-   
